@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Petal & Bloom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page" id="top">
+  <header class="site-header">
+    <a class="logo" href="#top">🌷 Petal & Bloom</a>
+    <span class="back-link">Sign in or create an account to continue</span>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="auth-art">
+      <p class="eyebrow">A little happiness, delivered</p>
+      <h1>Make someone's<br><span>day bloom.</span></h1>
+      <p>Sign in or create an account first. Your account is required to browse bouquets and place a booking.</p>
+      <div class="auth-flowers" aria-hidden="true">🌷 🌸 💐 🌼</div>
+    </section>
+
+    <section class="auth-card">
+      <div class="auth-tabs" role="tablist" aria-label="Account options">
+        <button class="auth-tab active" id="signin-tab" type="button" role="tab" aria-selected="true">Sign in</button>
+        <button class="auth-tab" id="signup-tab" type="button" role="tab" aria-selected="false">Sign up</button>
+      </div>
+
+      <div id="auth-message" class="auth-message" role="status" aria-live="polite"></div>
+
+      <form id="signin-form" class="auth-form">
+        <h2>Welcome back</h2>
+        <p class="auth-subtitle">Sign in to continue to Petal & Bloom.</p>
+        <label for="signin-email">Email address</label>
+        <input id="signin-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <label for="signin-password">Password</label>
+        <input id="signin-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" minlength="6" required>
+        <button class="button auth-submit" type="submit">Sign in</button>
+        <p class="auth-switch">New here? <button class="text-button" type="button" data-show="signup">Create an account</button></p>
+      </form>
+
+      <form id="signup-form" class="auth-form" hidden>
+        <h2>Create your account</h2>
+        <p class="auth-subtitle">It only takes a moment to get started.</p>
+        <label for="signup-name">Full name</label>
+        <input id="signup-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+        <label for="signup-email">Email address</label>
+        <input id="signup-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <label for="signup-phone">Phone number</label>
+        <input id="signup-phone" name="phone" type="tel" placeholder="e.g. 98765 43210" autocomplete="tel" required>
+        <label for="signup-password">Create password</label>
+        <input id="signup-password" name="password" type="password" placeholder="At least 6 characters" autocomplete="new-password" minlength="6" required>
+        <label for="signup-confirm">Confirm password</label>
+        <input id="signup-confirm" name="confirm" type="password" placeholder="Enter password again" autocomplete="new-password" minlength="6" required>
+        <button class="button auth-submit" type="submit">Create account</button>
+        <p class="auth-switch">Already have an account? <button class="text-button" type="button" data-show="signin">Sign in</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#top">🌷 Petal & Bloom</a>
+    <p>Fresh flowers for life's little moments.</p>
+  </footer>
+  <script src="auth.js"></script>
+</body>
+</html>

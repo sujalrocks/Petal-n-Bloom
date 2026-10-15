@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders | Petal & Bloom</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="auth-guard.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">🌷 Petal & Bloom</a>
+    <nav>
+      <a href="index.html#flowers">Flowers</a>
+      <a href="index.html#booking">Book a bouquet</a>
+      <span id="account-nav"><a href="auth.html">Sign in</a></span>
+    </nav>
+  </header>
+
+  <main class="orders-page">
+    <div class="orders-heading">
+      <p class="eyebrow">A little update for you</p>
+      <h1>Your <span>orders.</span></h1>
+      <p>See your bouquet details and follow its delivery progress.</p>
+    </div>
+    <div id="orders-list"></div>
+    <div class="order-actions">
+      <a class="button" href="index.html#flowers">Book more flowers</a>
+    </div>
+  </main>
+
+  <footer>
+    <a class="logo" href="index.html">🌷 Petal & Bloom</a>
+    <p>Fresh flowers for life's little moments.</p>
+    <small>© 2026 Petal & Bloom</small>
+  </footer>
+  <script src="nav.js"></script>
+  <script src="order.js"></script>
+</body>
+</html>

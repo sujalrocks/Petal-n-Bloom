@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile | Petal & Bloom</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="auth-guard.js"></script>
+</head>
+<body class="profile-body">
+  <header class="site-header">
+    <a class="logo" href="index.html">🌷 Petal & Bloom</a>
+    <nav>
+      <a href="index.html#flowers">Flowers</a>
+      <a href="index.html#booking">Book a bouquet</a>
+      <a href="order.html">My orders</a>
+      <span id="account-nav"><a href="auth.html">Sign in</a></span>
+    </nav>
+  </header>
+
+  <main class="profile-page">
+    <div class="profile-welcome">
+      <div>
+        <p class="eyebrow">YOUR ACCOUNT</p>
+        <h1>Everything about your <span>blooms.</span></h1>
+        <p class="profile-intro">Keep your details handy, revisit your bookings, and make your next flower delivery even easier.</p>
+      </div>
+      <a class="profile-welcome-action" href="index.html#flowers">＋ Book a new bouquet</a>
+    </div>
+
+    <div class="profile-layout">
+      <aside class="profile-sidebar" aria-label="Account navigation">
+        <div class="profile-brand-card">
+          <div class="profile-avatar" aria-hidden="true">🌷</div>
+          <p class="profile-identity-label">SIGNED IN AS</p>
+          <p class="profile-identity-name" id="profile-display-name">Your account</p>
+          <span class="profile-member-pill">Bloom member</span>
+        </div>
+        <nav class="profile-menu" aria-label="Profile sections">
+          <a class="profile-menu-link active" href="#personal-details" aria-current="location"><span aria-hidden="true">👤</span> Personal details</a>
+          <a class="profile-menu-link" href="#order-updates"><span aria-hidden="true">📦</span> Recent order updates</a>
+          <a class="profile-menu-link" href="order.html"><span aria-hidden="true">🧾</span> All my orders</a>
+        </nav>
+        <div class="profile-sidebar-note">
+          <span aria-hidden="true">✿</span>
+          <div><strong>Fresh blooms, less fuss.</strong><p>Your saved details help make future bookings quicker.</p></div>
+        </div>
+        <div class="profile-sidebar-footer">
+          <p>Need a fresh start?</p>
+          <button class="text-button" id="sign-out-button" type="button">Sign out</button>
+        </div>
+        <div class="profile-floral-art" aria-hidden="true">🌿<span>🌷</span>🌱<br><small>fresh blooms<br>for brighter days</small></div>
+      </aside>
+
+      <div class="profile-content">
+        <section class="profile-card profile-personal-card" id="personal-details" aria-labelledby="personal-details-title">
+          <div class="profile-section-heading">
+            <div>
+              <p class="eyebrow">ACCOUNT INFORMATION</p>
+              <h2 id="personal-details-title">Personal details</h2>
+              <p class="profile-hint">These details can be used to make future bookings quicker.</p>
+            </div>
+            <span class="profile-section-icon" aria-hidden="true">✿</span>
+          </div>
+          <form id="profile-form" class="profile-form">
+            <div class="profile-fields-grid">
+              <div class="profile-field">
+                <label for="profile-name">Full name</label>
+                <div class="profile-input-wrap"><span aria-hidden="true">👤</span><input id="profile-name" name="name" type="text" autocomplete="name" required maxlength="100" placeholder="Enter your full name"></div>
+              </div>
+              <div class="profile-field">
+                <label for="profile-phone">Phone number</label>
+                <div class="profile-input-wrap"><span aria-hidden="true">☎</span><input id="profile-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="Enter your phone number"></div>
+              </div>
+              <div class="profile-field profile-field-wide">
+                <label for="profile-email">Email address</label>
+                <div class="profile-input-wrap"><span aria-hidden="true">✉</span><input id="profile-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com"></div>
+                <p class="field-help">Used to identify your account and match your orders.</p>
+              </div>
+            </div>
+            <p id="profile-message" class="auth-message" role="status" aria-live="polite" tabindex="-1"></p>
+            <div class="profile-form-actions">
+              <button class="button" type="submit">Save changes</button>
+              <span class="profile-save-note">🔒 Your details stay saved in this browser.</span>
+            </div>
+          </form>
+        </section>
+
+        <section class="profile-card profile-updates-card" id="order-updates" aria-labelledby="order-updates-title">
+          <div class="profile-section-heading">
+            <div>
+              <p class="eyebrow">THE LATEST</p>
+              <h2 id="order-updates-title">Recent order updates</h2>
+              <p class="profile-hint">A quick look at your latest bouquet bookings.</p>
+            </div>
+            <a class="mini-link" href="order.html">View all →</a>
+          </div>
+          <div id="profile-updates" aria-live="polite"></div>
+          <div class="profile-discovery">
+            <div class="discovery-copy"><span class="discovery-icon">🌸</span><div><strong>Ready for your next bloom?</strong><p>Pick a favourite bouquet and make someone's day a little brighter.</p></div></div>
+            <a class="button button-secondary" href="index.html#flowers">Explore bouquets</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a class="logo" href="index.html">🌷 Petal & Bloom</a>
+    <p>Fresh flowers for life's little moments.</p>
+    <small>© 2026 Petal & Bloom</small>
+  </footer>
+  <script src="nav.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>
