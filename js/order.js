@@ -28,11 +28,6 @@ function showOrders() {
       '<div><span>Delivering to</span><strong>' + order.address + '</strong></div>';
     card.appendChild(details);
 
-    var note = document.createElement('p');
-    note.className = 'tracking-note';
-    note.textContent = 'Demo tracker: your booking is saved in this browser. Delivery updates are not automatic.';
-    card.appendChild(note);
-
     ordersList.appendChild(card);
   }
 }
